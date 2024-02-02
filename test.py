@@ -152,33 +152,6 @@ tfidf_train_matrix = tfidf_vectorizer.fit_transform(X_train)
 # Transform the test set with the same vectorizer
 tfidf_test_matrix = tfidf_vectorizer.transform(X_test)
 
-"""
-# Initialize TF-IDF Vectorizer
-tfidf_vectorizer = TfidfVectorizer()
-
-# Fit and transform the contents
-tfidf_matrix = tfidf_vectorizer.fit_transform(contents)
-
-# The `tfidf_matrix` now holds the numerical data ready for ML training
-
-# Transform the test set contents using the fitted TF-IDF Vectorizer from the training set
-tfidf_test_matrix = tfidf_vectorizer.transform(test_contents)
-
-# Now `tfidf_test_matrix` holds the numerical data ready for ML testing
-
-# Split the dataset into training and testing sets using an 80-20 split
-X_train, X_test, y_train, y_test = train_test_split(contents, labels, test_size=0.2, random_state=42)
-
-# Initialize TF-IDF Vectorizer
-tfidf_vectorizer = TfidfVectorizer()
-
-# Fit the vectorizer on the training set and transform the training set
-tfidf_train_matrix = tfidf_vectorizer.fit_transform(X_train)
-
-# Transform the test set with the same vectorizer
-tfidf_test_matrix = tfidf_vectorizer.transform(X_test)
-"""
-
 
 # Now `tfidf_train_matrix` and `y_train` are ready to be used in the training of the ML model
 # `tfidf_test_matrix` and `y_test` will be used for evaluating the model's performance
